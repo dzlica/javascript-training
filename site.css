@@ -1,0 +1,84 @@
+html, body {
+    font-size: 16px;
+    color: #554700;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #FFF1AA;
+}
+
+body > header {
+    background-color: #D4C36A;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 1070px;
+}
+
+main {
+    background-color: #AA9739;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 40px;
+    width: 1070px;
+}
+
+h1 {
+    text-align: center;
+    padding: 50px;
+    font-size: 55px;
+}
+
+.myButton {
+    background-color: #806E16;
+    font-size: 24px;
+    color: #554700;
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.divideInTwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.myTextBox {
+    width: 480px;
+}
+
+.formStyle {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+.textArea, .writeSomethingButton {
+    background-color: #D4C36A;
+}
+
+.writeSomethingButton {
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+
+.oneMovie {
+    margin-top: 30px;
+}
+
+.omdb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.omdbDetails {
+    width: 480px;
+}

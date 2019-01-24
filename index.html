@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My first javascript project</title>
+    <link rel="stylesheet" type="text/css" href="site.css">
+    <script src="site.js"></script>
+</head>
+<body>
+    <header>
+        <h1>LMDB: Lica's Movie Database</h1>
+    </header>
+    <main>
+        <button class="myButton" id="button" onclick="favMovie()">Favorite movie</button>
+        <div class="divideInTwo">
+            <p class="myTextBox">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis felis ut nisl aliquam accumsan. In felis neque, pellentesque id tellus sed, tempus commodo metus. Aenean scelerisque, lorem sed convallis pretium, urna magna luctus nibh, id varius arcu nibh pharetra odio. Ut imperdiet orci pellentesque, sagittis nunc in, euismod lectus. Ut volutpat accumsan nulla commodo dapibus. Nulla faucibus erat vitae elit pharetra consequat. Duis interdum aliquam sapien, pellentesque dapibus dui fringilla nec. Sed rhoncus dolor sit amet ante dapibus feugiat. Ut dignissim quam et neque pulvinar viverra.
+            </p>
+            <p class="myTextBox">
+                Pellentesque turpis risus, aliquam quis purus id, euismod mollis lacus. Nunc cursus, eros ac tincidunt volutpat, tortor quam sagittis ex, quis finibus dolor risus varius ante. Phasellus euismod sagittis risus, id dignissim neque consectetur id. Maecenas quis tellus lorem. Aenean nec nunc at turpis pretium bibendum vel tincidunt felis. Fusce et imperdiet quam, a feugiat augue. Phasellus nulla tortor, facilisis quis blandit et, rhoncus vel sem. Sed sit amet accumsan mauris, a euismod urna. Nulla mollis vitae ligula eget eleifend. Nam non tellus sit amet diam faucibus semper. Nam eu elit eu neque aliquam mollis vel a leo.
+            </p>
+        </div>
+        <div class="writeSomething">
+            <form>
+                <textarea class="textArea" id="txt"></textarea>
+                <input type="button" value="Write something" class="writeSomethingButton" onclick="insertText()">
+            </form>
+            <p class="menu">Let's write something here: </p>
+            <p class="menu" id="writeHere"></p>
+        </div>
+        <button class="myButton" onclick="insertMovie()">List of movies</button>
+        <div class="oneMovie" id="listOfMovies"></div>
+        <form id="chooseMovie" class="chooseMovie">
+            <input type="radio" id="castle" name="movie" value="2baf70d1-42bb-4437-b551-e5fed5a87abe">
+            <label for="castle">Castle in the Sky</label>
+            <input type="radio" id="spirited" name="movie" value="dc2e6bd1-8156-4886-adff-b39e6043af0c">
+            <label for="spirited">Spirited Away</label>
+            <input type="radio" id="princess" name="movie" value="0440483e-ca0e-4120-8c50-4c8cd9b965d6">
+            <label for="princess">Princess Mononoke</label>
+        </form>
+        <button class="myButton" id="movieButton" onclick="whatMovie()">Show details</button>
+        <div id="displayDetails"></div>
+        <div class="omdb">
+            <button class="myButton" id="omdbButton" onclick="omdbRequest()">OMDB request</button>
+            <div class="omdbImage" id="image"></div>
+            <div class="omdbDetails">
+                <div id="displayOmdbTitle"></div>
+                <div id="displayOmdbDirector"></div>
+                <div id="displayOmdbWriter"></div>
+                <div id="displayOmdbActor"></div>
+                <div id="displayOmdbPlot"></div>
+            </div>
+        </div>
+        <form id="search">
+            <textarea class="searchArea" id="searchtxt"></textarea>
+            <input type="button" value="Search title" class="writeSomethingButton" onclick="searchTitle()">
+        </form>
+
+    </main>
+
+</body>
+</html>
